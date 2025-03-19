@@ -1,0 +1,33 @@
+<div>
+    <button (click)="removeItem()">clear</button>
+    <h2>Ng For tutorial</h2>
+            <!-- <div *ngFor="let i of students" class="list">
+                {{i.name}}
+                <br>
+                {{i.status}}
+                <br>
+                {{i.active}}
+                <br>
+            </div> -->
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Active</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of students, let x = index, let o=odd, let e=even " [ngClass]="{even:e, odd:o}">
+                        <td>{{x+1}}
+                        </td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.status}}</td>
+                        <td>{{i.active}}</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+</div>

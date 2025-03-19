@@ -1,0 +1,45 @@
+<div>
+    <h2>ng switch tutorial</h2>
+    <!-- <button (click)="increase()">Increase</button> -->
+     <select [(ngModel)]="num" name="num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+     </select>
+    <div [ngSwitch]="num">
+        <div *ngSwitchCase="'1'">
+            <h2>one</h2>
+        </div>
+        <div *ngSwitchCase="'2'">
+            <h2>two</h2>
+        </div>
+        <div *ngSwitchCase="'3'">
+            <h2>three</h2>
+        </div>
+        <div *ngSwitchCase="'4'">
+            <h2>four</h2>
+        </div>
+        <div *ngSwitchCase="'5'">
+            <h2>five</h2>
+        </div>
+        <div *ngSwitchDefault>
+            <h2>no number</h2>
+        </div>
+    </div>
+    <div [ngSwitch]="day">
+        <div *ngSwitchCase="'monday'">
+            <h2>Monday</h2>
+        </div>
+        <div *ngSwitchCase="'tuesday'">
+            <h2>Tuesday</h2>
+        </div>
+        <div *ngSwitchCase="'wednesday'">
+            <h2>Wednesday</h2>
+        </div>
+        <div *ngSwitchCase="'sunday'">
+            <h2>Sunday</h2>
+        </div>
+    </div>
+</div>

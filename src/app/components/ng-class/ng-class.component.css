@@ -1,0 +1,19 @@
+.primary{
+    background-color: rgb(46, 190, 247);
+    width: 40%;
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+}
+
+.fontStyle{
+    font-style: italic;
+}
+
+.secondary{
+    background-color: green;
+    width: 40%;
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+}

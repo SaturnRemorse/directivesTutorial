@@ -1,0 +1,17 @@
+<div>
+    <h2>ng if tutorial</h2>
+    <input type="checkbox" (change)="changeState()">
+    <div *ngIf="active; else elseBlock" >
+        <h3 class="active">user is active</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, velit!</p>
+    </div>
+
+    <!-- <div [hidden]="!active">
+        <p>This is hidden atribute</p>
+
+    </div> -->
+    <ng-template #elseBlock>
+        <h3 class="not-active">User is not active</h3>
+    </ng-template>
+
+</div>
